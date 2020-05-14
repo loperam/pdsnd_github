@@ -26,6 +26,9 @@ and the data files:
 * new_york_city.csv
 * washington.csv
 
+### Instructions on how to run this ccode
+To run this code, you need to download the Python code <nolink>bikeshare.py<nolink> and the datasets to the same folder. Then open a Python 3.x session and execute the code.
+The script will ask you to enter which city you want to explore as well as what months and days you want to focus on.
 
 ### Credits
 For this project I used the following sites as reference:
