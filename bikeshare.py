@@ -256,7 +256,8 @@ def raw_data(df):
     """Displays raw data from the bikeshare users."""
     
     iter = 0
-    rows=df.shape[0]   #len(df.index)  is faster
+    rows=len(df.index)
+    print('\n Total number of trips in this selection: ',rows)
     print('\n Displaying individual trip data\n')
     while True:
         for row in range(5):
