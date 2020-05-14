@@ -292,6 +292,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no. ')
         if restart.lower() != 'yes':
+			print('\nThanks for using this code. Have a nice day :o) ')
             break
 
 
