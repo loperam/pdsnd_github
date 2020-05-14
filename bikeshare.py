@@ -217,8 +217,8 @@ def user_stats(df):
         print('{} {}(s)'.format(user_counts[i],user_counts.index[i]))
 
     # TO DO: Display counts of gender
-    gender_counts=df['Gender'].value_counts()
-    print('\nThe total gender counts is {} {}(s) and {} {}(s)'.format(gender_counts[0],gender_counts.index[0],gender_counts[1],gender_counts.index[1]))
+    gender_counts = df.groupby('Gender')['Gender'].count()
+    print('\nThe total gender count is ',gender_counts)
 
     # TO DO: Display earliest, most recent, and most common year of birth
     df['Birth Year'].dropna(inplace=True)
@@ -292,6 +292,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no. ')
         if restart.lower() != 'yes':
+            print('\nThanks for using this code. Have a nice day :o) ')
             break
 
 
